@@ -1,5 +1,6 @@
 {
   "editor.fontSize": 15,
+  "editor.formatOnSave": true,
   "editor.rulers": [
     80,
     120
@@ -31,12 +32,10 @@
   },
   "workbench.startupEditor": "newUntitledFile",
   "workbench.fontAliasing": "auto",
-  "docker.showExplorer": false,
   "workbench.editor.showIcons": true,
   "explorer.confirmDragAndDrop": false,
   "search.smartCase": true,
-  "editor.fontFamily": "FuraCode Nerd Font Mono Retina, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
+  "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
   "files.associations": {
     "*.tmpl": "gotemplate"
   },
@@ -44,6 +43,8 @@
   "breadcrumbs.enabled": true,
   "telemetry.enableTelemetry": false,
   "terraform.telemetry.enabled": false,
+  "terraform.indexing.enabled": false,
+  "terraform.languageServer.enabled": true,
   "telemetry.enableCrashReporter": false,
   "go.useCodeSnippetsOnFunctionSuggest": true,
   "go.formatTool": "goimports",
@@ -58,5 +59,18 @@
   "editor.fontWeight": "600",
   "terminal.integrated.cursorBlinking": true,
   "go.coverOnSingleTest": true,
-  "terminal.integrated.cursorStyle": "line"
+  "terminal.integrated.cursorStyle": "line",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "go.useLanguageServer": false,
+  "go.alternateTools": {
+    "go-langserver": "gopls"
+  },
+  "go.languageServerExperimentalFeatures": {
+    "format": true,
+    "autoComplete": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "window.newWindowDimensions": "maximized"
 }
