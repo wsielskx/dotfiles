@@ -8,7 +8,6 @@ alias glg="git log --graph --decorate --oneline --abbrev-commit"
 alias glga="glg --all"
 alias gp='git push origin HEAD'
 alias gpa='git push origin --all'
-alias gpo="git push --set-upstream origin $(git branch | awk '/^\* / { print $2 }')"
 alias gd='git diff'
 alias gc='git commit -s'
 alias gca='git commit -s -a'
@@ -29,4 +28,8 @@ fi
 
 gi() {
 	curl -s "https://www.gitignore.io/api/$*"
+}
+
+gpo() {
+	git push --set-upstream origin $(git branch | awk '/^\* / { print $2 }')
 }
